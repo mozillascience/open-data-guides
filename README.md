@@ -1,4 +1,4 @@
-# Open Data Primers
+# Open Data Instructor Guides
 
 Welcome to the [@MozillaScience](https://twitter.com/mozillascience) Lab's collection of instructor guides to train people in open data use/reuse.
 
