@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>1. Why Open Data?</title>
+    <title>2. Data Preservation &amp; Archiving</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mozilla Science Lab"/>
@@ -39,13 +39,13 @@
     </div>
 	<!-- TITLE -->
       <h1>Open Data Training</h1>
-      <h2>Guide 1: Why Open Data?</h2>
+      <h2>Guide 2: Data Preservation &amp; Archiving</h2>
 
   <!-- META INFO -->
       <div class="meta-information">
 
         <p class="summary">
-           Why open data is valuable and important.
+           The basics of getting your data ready for preservation and archiving.
         </p>
 
       </div>
@@ -59,7 +59,7 @@
       <section>
         <h4>Intro</h4>
         <p>
-          This training module is a very quick introduction to open data for newcomers to the topic, and for those who know a bit but want to know more. This material was produced by Mozilla Science Lab, a program to encourage the use of open source practices and web technologies to do better science.
+          This training module is a very quick introduction to data management and documentation, and for those who know a bit but want to know more. This material was produced by Mozilla Science Lab, a program to encourage the use of open source practices and web technologies to do better science.
         </p>
       </section>
     </section>
@@ -81,15 +81,15 @@
       <section>
         <h4>Total Time to Complete</h4>
         <p>
-          About 2 hours, including breaks and transitions.
+          About 1 1/2 hours
         </p>
       </section>
       <section>
         <h4>Learning Objectives</h4>
           <ul>
-            <li>Define open data</li>
-            <li>Describe the benefits of open data</li>
-            <li>Respond to common challenges to open data</li>
+            <li>Identify common data management errors</li>
+            <li>Write human-readable metadata</li>
+            <li>Describe the benefits of machine-readable metadata</li>
           </ul>
       </section>
     </section>
@@ -97,80 +97,45 @@
   <!-- OUTLINE -->
   	<h2 id="outline">Content Outline</h2>
       <ul>
-        <li><strong>Workshop introductions, and an introduction to our topics</strong> (15-20 minutes)</li>
-        <li><strong>Think-Pair-Share:</strong> What is open data? Define. (10 minutes)</li>
-        <li><strong>Case Study Exploration:</strong> (30 minutes)<br />
-            &#8198 &#8226 Example 1: <a href="https://www.washingtonpost.com/news/wonk/wp/2013/04/16/is-the-best-evidence-for-austerity-based-on-an-excel-spreadsheet-error/">Growth in the Time of Debt</a><br />
-            &#8198 &#8226 Example 2: <a href="https://www.techdirt.com/articles/20130403/09501122561/public-domain-human-genome-project-generated-more-research-more-commercial-activity-than-proprietary-competitor.shtml">Human Genome Project</a>
-        </li>
-        <li><strong>The Benefits of Open Data in 8 Easy Points</strong> (5 minutes)</li>
-        <li><strong>Challenges to Open Data:</strong> Role Playing Exercise (15 minutes)</li>
+        <li><strong>Workshop introductions and an introduction to our topics</strong> (2-5 minutes)</li>
+        <li><strong>Small group sharing</strong> - Frustrations trying to understand someone else's data (10 minutes)</li>
+        <li><strong>Common spreadsheet issues</strong> (10 minutes)</li>
+        <li><strong>Metadata</strong> - A love letter to the future (5 minutes)</li>
+        <li><strong>Writing a DATA-README</strong> (25 minutes)</li>
         <li><strong>Additional Resources</strong> (10 minutes)</li>
-        <li><strong>Wrap-up</strong> (5 minutes)</li>
+        <li><strong>Wrap-up &amp; Additional Resources</strong> (10 minutes)</li>
       </ul>
 
   <!-- GUIDE -->
   	<h2 id="guide">Instructor Guide</h2>
     <h4>Instructor Prerequisites:</h4>
       <ul>
-	      <li>Familiarity with <a href="https://mozillascience.github.io/open-data-primers/1-why-open-data.html">Open Data Training Primer 1</a></li>
+	      <li>Familiarity with Open Data Training Primer 2</li>
         <li>Close review of Instructor Guides and all supporting materials for this module</li>
       </ul>
     </p>
     <ol class="steps">
       <!-- Topic 1 -->
       <li>
-        <h1>Topic 1: Introductions and Discussion about Open Data</h1>
-        <time>(15-20 minutes)</time>
+        <h1>Topic 1: Workshop &amp; participant introductions</h1>
+        <time>(2-5 mins; skip participant introductions if being presented as a series)</time>
         <ul>
-          <li><h4>Introductions</h4>
+          <li><h4>Introduction to the workshop</h4>
             <ul>
-              <li><strong>Group intros</strong> (5-10 mins depending on group size)
-                <ul>
-                  <li>Each participant says name, something surprising about them, and what brought them to the training</li>
-                </ul>
-                <!-- PROTIP TEMPLATE -->
-    <section class="example">
-      <section class="title">
-        <div class="image">
-          <img src="../assets/images/noun_368080.png" height="90" width="90" align="center">
-        </div>
-      </section>
-      <section class="content">
-        <p>
-          <strong>Introduce yourself and model a good, short intro.</strong> Keep an eye on time for each person-- make sure intros are brisk!
-        </p>
-      </section>
-    </section>
-              </li>
-              <li><strong>Why this training, why Mozilla?</strong> (2 mins)
-                <ul>
-                  <li>&#8198 &#8226 Intro the training series, and how it was created (collaboration, sprints)</li>
-                  <li>&#8198 &#8226 Structure of the session, content exploration through activities</li>
-                  <li>&#8198 &#8226 Why MSL and Mozilla are involved, your relationship to Mozilla</li>
-                </ul>
-              </li>
-              <li><strong>Why open data now?</strong> (2 mins)
-                <ul>
-                  <li>&#8198 &#8226 More data than ever-- define types of data here</li>
-                  <li>&#8198 &#8226 Pressure from funders, want more impact from data</li>
-                  <li>&#8198 &#8226 The web as sharing/collaboration tool</li>
-                </ul>
-              </li>
-              <li><strong><a href="https://www.youtube.com/watch?v=N2zK3sAtr-4">Data Management SNAFU Video</a></strong> (3 mins)
-              </li>
+              <li><strong>Review module topic areas</strong></li>
             </ul>
           </li>
         </ul>
       </li>
       <!-- Topic 2 -->
-      <li><h1>Topic 2: Think-Pair-Share Exercise</h1>
-        <time>(2 mins writing, 5 mins sharing)</time>
+      <li><h1>Topic 2: Small Group Sharing Exercise</h1>
+        <time>(10 mins)</time>
         <ul>
-          <li><h4>What is Open Data?</h4>
+          <li><h4>Challenges Understanding Other People's Data</h4>
             <ol>
-              <li>Participants spend 2 minutes thinking of a definition and, if possible, supporting examples.</li>
-              <li>Participants pair up to share and talk through their thoughts with another participant.
+              <li>Share a brief anecdote about a time you’ve experienced a challenge with understanding someone else’s data. (2 mins)</li>
+              <li>Break participants into small groups of 3-4 people and encourage participants to share their own anecdotes about times they’ve struggled with trying to understand or using poorly documented data. (4 mins) <br />
+                <em>The goal here is to warm participants to the idea of doing a bit of ‘extra’ work of data documentation and data hygiene up front.</em>
                 <section class="example">
                   <section class="title">
                     <div class="image">
@@ -182,19 +147,20 @@
                       Depending on the size of the group, insights can be shared whole group or recorded on a white board, etherpad or other shared document.
                     </p>
                   </section>
-                </section></li>
-              <li>Once think-pair-share is complete, the instructor should help the group come to a definition (see slide for definitions from Primer 1)</li>
+                </section>
+              </li>
+              <li>Once time is up for discussion on previous question, ask a follow up question:  Has there ever been a time you’ve struggled to understand data you produced, yourself? (4 mins)</li>
             </ol>
         </ul>
       </li>
       <!-- Topic 3 -->
-      <li><h1>Topic 3: Case Study Exploration</h1>
-        <time>(20 mins review, 5 mins sharing)</time>
-        <p>Group case studies allow participants to interpret and draw conclusions from the cases without instructor intervention; several cases can be discussed quickly.</p>
-        <p>Working together, students review a case to summarize the details and present any controversies involved in the case. Suggested cases:<br />
-          &#8198 &#8226 <a href="CS_ReinhartRogoff.pdf">Reinhart and Rogoff</a><br />
-          &#8198 &#8226 <a href="CS_CeleraHGP.pdf">Celera and HGP</a></p>
-        <p>Cases may be assigned prior to the session, if possible and preferable.</p>
+      <li><h1>Topic 3: Common Spreadsheet Issues</h1>
+        <time>(10 mins)</time>
+        <p>Data can "go wrong" in a multitude of ways.
+          <ul>
+            <li>Use the list on the <a href="https://github.com/Quartz/bad-data-guide">Quartz Guide to Bad Data</a> as examples of problematic data formatting issues.</li>
+            <li>Project the <a href="https://www.dropbox.com/s/5ncuacnd3arjitc/survey_data_tabs.xls?dl=0">messy dataset file</a> from <a href="http://www.datacarpentry.org/">Data Carpentry</a> at the front of the room or share the file so that students can open it on their personal computers.</li>
+            <li>At the whiteboard or in an etherpad, develop a list of problems that would need to be addressed with the data for it to be understood or reused.
         <section class="example">
           <section class="title">
             <div class="image">
@@ -203,81 +169,63 @@
           </section>
           <section class="content">
             <p>
-              Instructors should select cases that have elements of controversy for good discussions.
+              If you’re working with learners from a particular field, choosing a messy dataset from that field works best.
             </p>
           </section>
         </section>
+            </li>
+          </ul>
+        </p>
       </li>
       <!-- Topic 4 -->
-      <li><h1>Topic 4: Benefits of Open Data</h1>
-        <time>(5 mins)</time>
-        <p>Run through the eight benefits from Primer 1, with brief explanations.</p>
+      <li><h1>Topic 4: Metadata</h1>
+        <time>(10 mins)</time>
+        <p>The goals for this lesson are to help students understand the benefits of open data, how to encourage others to make their data open, and to identify what you can do with your own data to make it possible for someone to build on your work.
+          <ul>
+            <li>View "<a href="https://www.youtube.com/watch?v=ulArB9DAnW4">What is Metadata?</a>" video (5 mins)</li>
+            <li>Review "Metadata, A Love Note to the Future" example in Primer 2</li>
+          </ul>
       </li>
       <!-- Topic 5 -->
-      <li><h1>Topic 5: Challenges to open data</h1>
-        <time>(role playing exercise, 10-15 minutes)</time>
-        <p>Participants practice responding to common challenges to opening data, and advocating for open data.</p>
-        <p>Instructor starts by asking group for challenges they’ve heard, suggests a few.
-        <section class="example">
-          <section class="title">
-            <div class="image">
-              <img src="../assets/images/noun_368080.png" height="90" width="90" align="center">
-            </div>
-          </section>
-          <section class="content">
-            <p>
-              See “Common Challenges” document for challenges to mention, but give group a chance to come up with their own. Share the document AFTER the role-play.
-            </p>
-          </section>
-        </section>
-        </p>
-        <p>Instructor assigns roles to participants using cards: each role has a position (for or against open data), a background (ie, administrator), and motivation (for example, publishing a first paper, getting more grants, making administrative tasks easier, getting a post-doc position, getting tenure).
-          <section class="example">
-            <section class="title">
-              <div class="image">
-                <img src="../assets/images/noun_368080.png" height="90" width="90" align="center">
-              </div>
-            </section>
-            <section class="content">
-              <p>
-                Participants can ask for a blank card and make their own character/scenario if they’d prefer.
-              </p>
-            </section>
-          </section>
-        </p>
-        <p>
-          Participants pair up (pro with con/undecided) and do a 3 min role play conversation.</p>
-        <p>If there’s time, ask for a volunteer pair to demonstrate a conversation.</p>
-        <section class="example">
-          <section class="title">
-            <div class="image">
-              <img src="../assets/images/noun_368080.png" height="90" width="90" align="center">
-            </div>
-          </section>
-          <section class="content">
-            <p>
-              Discourage participants from memorizing the pro/con stances. Invite them to expand/invent/express new reasons/ideas/feelings to support their argument.
-            </p>
-          </section>
-        </section>
-        <p>Ask for reflections/thoughts on how this felt, what did you learn, any insights.</p>
-        <p>Point users to the Challenges document as a guide for these conversations.</p>
+      <li><h1>Topic 5: Writing a DATA-README</h1>
+        <time>(writing exercise, 25 minutes)</time>
+        <p>The DATA-README is a human-readable metadata document that students should get in the habit of making with every dataset they produce.</p>
+        <p>EXERCISE: Your Data Can Live Forever: How to Plan for Data Reuse</p>
       </li>
       <!-- Topic 6 -->
-      <li><h1>Topic 6: Resources</h1>
-        <time>(slide, review/describe, 5 minutes)</time>
+      <li><h1>Topic 6: Wrap Up / Share Out </h1>
+        <time>(10 minutes)</time>
+        <p>Ask for thoughts and responses to what was learned. Which parts of the lesson were most useful?</p>
+        <p>Ask about participant concrete next steps for continuing on the open data journey.</p>
       </li>
-      <!-- Topic 7 -->
-      <li><h1>Topic 7: Wrap Up / Share Out </h1>
-        <time>(slide, 10 minutes)</time>
-        <p>Ask for thoughts and responses to what was learned.</p>
-        <p>Discuss next steps for continuing on the open data journey.</p>
+      <li><h1>Resources</h1>
+        <ul>
+          <li><strong>Glossary:</strong>
+            <ul>
+              <li><strong>Data dictionary</strong> - A text file defining field names and values (sometimes used interchangeably with the term “codebook”). Includes: a list of all field names, a description of fields &amp; values (e.g. units of measurement, formulas used for calculation, abbreviations, value ranges) as well as the relationship of fields to one another. <a href="http://www.utexas.edu/cola/redcap/_files/data_dictionary_example.jpg">Example of a data dictionary.</a></li>
+              <li><strong>Metadata</strong> - Information that describes, explains, locates, or in some way makes it easier to find, access, and use a resource (in this case, data). For example, metadata for a photograph may include the name of the photographer, when and where it was taken, as well as the type of camera and settings used to take the photograph.</li>
+              <li><strong>Metadata schema</strong> - are sets of rules for how to describe a certain type of information.  There are many different metadata schema primarily organized by information format and/or discipline.</li>
+              <li><strong>Permanent identifier</strong> - A permanent identifier (or PID) is a set of numbers and/or characters, frequently in the form of a URL, that points to the location of a resource. PIDs are set up in such a way that even though the storage location of the resource may change over time (e.g. moving data from one university server to another), the PID will always point to the correct location. DOI (Digital Object Identifier) is a commonly known type of PID.</li>
+            </ul>
+          </li>
+          <li><strong>Resources:</strong>
+            <ul>
+              <li><a href="http://www.ands.org.au/guides/file-formats">Australian National Data Service File Formats Guide</a></li>
+              <li><a href="http://ands.org.au/guides/metadata-working">Australian National Data Service Working-Level Metadata Guide</a></li>
+              <li><a href="http://www.dcc.ac.uk/resources/metadata-standards">Digital Curation Centre’s List of Disciplinary Metadata</a></li>
+              <li><a href="https://ojs.library.queensu.ca/index.php/IEE/article/view/4608/0">Nine simple ways to make it easier to (re)use your data</a></li>
+              <li><a href="http://www.pnamp.org/sites/default/files/best_practices_for_data_dictionary_definitions_and_usage_version_1.1_2006-11-14.pdf">Northwest Environmental Data Network Best Practices for Data Dictionary Definitions and Usage</a></li>
+              <li><a href="http://rd-alliance.github.io/metadata-directory/subjects/ ">Research Data Alliance Community-Maintained List of Metadata Schema</a></li>
+              <li><a href="http://www.data-archive.ac.uk/create-manage/document">UK Data Archive Documenting Your Data Overview</a></li>
+            </ul>
+          </li>
+        </ul>
       </li>
-    </ol>
+      </ol>
 
   <!-- Navigate -->
   	<h2 id="navigate">Navigate</h2>
-              <p> <a href="../index.html">Home</a>  |  <a href="2_How.html">Next Lesson</a></p>
+              <p> <a href="../index.html">Home</a>  |  <a href="3_Share.html">Next Lesson</a></p>
   	</article>
   </body>
 </html>
