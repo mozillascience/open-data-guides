@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2. Data Preservation & Archiving</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mozilla Science Lab"/>
+    <!-- STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/javascript/table.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+  <!-- SIDE BAR NAVIGATION -->
+  <aside>
+    <div class="image">
+      <img src="../assets/images/science-fox_navy.svg">
+    </div>
+    <nav>
+      <a class="selected" href="#desc">Description</a>
+      <a href="#outline">Outline</a>
+      <a href="#guide">Guide</a>
+      <a href="#navigate">Navigate</a>
+    </nav>
+  </aside>
+  <!-- BODY TEXT -->
+  <article>
+    <div class="logo">
+      <a href="https://mozillascience.org" title="Mozilla Science Lab">
+        <img src="../assets/images/science-lab-logo.svg" />
+      </a>
+    </div>
+	<!-- TITLE -->
+      <h1>Open Data Training</h1>
+      <h2>Guide 2: Data Preservation & Archiving</h2>
+
+  <!-- META INFO -->
+      <div class="meta-information">
+
+        <p class="summary">
+           The basics of getting your data ready for preservation and archiving.
+        </p>
+
+      </div>
+
+      <div class="image">
+        <img src="../assets/images/banner-mist.png" alt="yeah bar" height="90" width="770">
+      </div>
+	<!-- Description -->
+		<h2 id="desc">Description</h2>
+    <section class="track-details">
+      <section>
+        <h4>Intro</h4>
+        <p>
+          This training module is a very quick introduction to data management and documentation, and for those who know a bit but want to know more. This material was produced by Mozilla Science Lab, a program to encourage the use of open source practices and web technologies to do better science.
+		 </p>
+      </section>
+    </section>
+    <section class="track-details">
+      <section>
+        <h4>Level</h4>
+        <p>
+         Beginner/Novice
+        </p>
+      </section>
+      <section>
+        <h4>Student Prerequisites</h4>
+        <p>
+          None.
+        </p>
+      </section>
+    </section>
+    <section class="track-details">
+      <section>
+        <h4>Total Time to Complete</h4>
+        <p>
+         About 1 hour, including transitions.
+        </p>
+      </section>
+      <section>
+        <h4>Learning Objectives</h4>
+          <ul>
+            <li>Identify common data management errors</li>
+            <li>Write human-readable metadata</li>
+            <li>Describe the benefits of machine-readable metadata</li>
+          </ul>
+      </section>
+    </section>
+
+  <!-- OUTLINE -->
+  	<h2 id="outline">Content Outline</h2>
+      <ul>
+        <li><strong>Workshop introductions and an introduction to our topics</strong> (5 minutes)</li>
+        <li><strong>Share: </strong> Frustrations trying to understand someone else's data (10 minutes)</li>
+        <li><strong>Common spreadsheet issues: </strong>an overview (10 minutes)</li>
+        <li><strong>Metadata: a love letter to the future</strong> (10 minutes)</li>
+        <li><strong>Writing a DATA-README</strong> (25 minutes)</li>
+        <li><strong>Additional Resources & Wrap Up</strong> (5 minutes)</li>
+      </ul>
+
+  <!-- GUIDE -->
+  	<h2 id="guide">Instructor Guide</h2>
+    <h4>Instructor Prerequisites:</h4>
+      <ul>
+	      <li>Familiarity with <a href="https://mozillascience.github.io/open-data-primers/2-how-to.html">Open Data Training Primer 2</a></li>
+        <li>Close review of Instructor Guides and all supporting materials for this module</li>
+      </ul>
+    </p>
+    <ol class="steps">
+      <!-- Topic 1 -->
+      <li>
+        <h1>Topic 1: Introductions and Discussion about Open Data</h1>
+        <time>(5 minutes - keep this brief if offered as part of a series/class)</time>
+        <ul>
+          <li><h4>Introductions</h4>
+            <ul>
+              <li><strong>Instructor</strong> (3 minutes)
+                <ul>
+                  <li>Explain your background, how you became involved in open data.</li>
+                </ul>
+                
+              </li>
+              <li><strong>Why this training, why Mozilla?</strong> (1 minutes)
+                <ul>
+                  <li>&#8198 &#8226 Intro the training series, and how it was created (collaboration, sprints, output of fellows program)</li>
+                  <li>&#8198 &#8226 Structure of the session, content exploration through activities</li>
+                  <li>&#8198 &#8226 Why MSL and Mozilla are involved, your relationship to Mozilla</li>
+                </ul>
+              </li>
+              <li><strong>Why open data now?</strong> (1 minutes)
+                <ul>
+                  <li>&#8198 &#8226 More data than ever-- define types of data here</li>
+                  <li>&#8198 &#8226 Pressure from funders, want more impact from data</li>
+                  <li>&#8198 &#8226 The web as sharing/collaboration tool</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!-- Topic 2 -->
+      <li><h1>Topic 2: Share frustrations</h1>
+        <time>(10 minutes)</time>
+        <ul>
+          <li><h4>What problems have you (might you) encounter when trying to understand someone else’s data?</h4>
+            <ol>
+              <p>Share a brief anecdote about a time you’ve experienced a challenge with understanding someone else’s data. (2 minutes)</p>
+              <p>Break participants into small groups of 3-4 people and encourage participants to share their own anecdotes about times they’ve struggled with trying to understand or using poorly documented data. The goal here is to warm participants to the idea of doing a bit of ‘extra’ work of data documentation and data hygiene up front. (4 minutes)</p>
+
+              <li>Suggested follow up question:  Has there ever been a time you’ve struggled to understand data you produced, yourself? (4 minutes)
+                <section class="example">
+                  <section class="title">
+                    <div class="image">
+                      <img src="../assets/images/noun_368080.png" height="90" width="90" align="center">
+                    </div>
+                  </section>
+                  <section class="content">
+                    <p>
+                      Depending on the size of the group, insights can be shared whole group or recorded on a white board, etherpad or other shared document.
+                    </p>
+                  </section>
+                </section></li>
+            </ol>
+        </ul>
+      </li>
+      <!-- Topic 3 -->
+      <li><h1>Topic 3: Common Spreadsheet Issues</h1>
+        <time>(10 minutes)</time>
+        <p>Use the list on the <a href="https://github.com/Quartz/bad-data-guide"></a>Quartz Guide to Bad Data</a> as an example of problematic data formatting issues.
+		</p>
+        <p>Project the <a href="https://www.dropbox.com/s/5ncuacnd3arjitc/survey_data_tabs.xls?dl=0">messy dataset</a> file from <a href="http://www.datacarpentry.org">Data Carpentry</a> at the front of the room or share the file so that students can open it on their personal computers. 
+        </p>
+		<p>At the whiteboard or in an etherpad, develop a list of problems that would need to be addressed with the data for it to be understood or reused.
+		</p>
+        <section class="example">
+          <section class="title">
+            <div class="image">
+              <img src="../assets/images/noun_368080.png" height="90" width="90" align="center">
+            </div>
+          </section>
+          <section class="content">
+            <p>
+              If you’re working with learners from a particular field, choosing a messy dataset from that field works best.
+            </p>
+          </section>
+        </section>
+      </li>
+      <!-- Topic 4 -->
+      <li><h1>Topic 4: Metadata</h1>
+        <time>(10 minutes)</time>
+        <p>The goals for this lesson are to help students understand the benefits of open data, how to encourage others to make their data open, and to identify what you can do with your own data to make it possible for someone to build on your work.</p>
+        <p>So what exactly is metadata? What does metadata need to include? <br><a href="https://www.youtube.com/watch?v=ulArB9DAnW4">What is Metadata? (YouTube Video)</a> (5 minutes)</p>
+        <p>Review Metadata, A Love Note to the Future example in Primer 2.</p>
+      </li>
+      <!-- Topic 5 -->
+      <li><h1>Topic 5: Writing a DATA-README</h1>
+        <time>(writing exercise, 25 minutes)</time>
+        <p>The DATA-README is a human-readable metadata document that students should get in the habit of making with every dataset they produce. </p>
+        <p><strong>Activity:</strong> have students write a DATA-README for a project they’re working on. A template is available <a href="https://github.com/mozillascience/working-open-workshop/blob/gh-pages/handouts/data_reuse_plan_template.md">here</a>.
+        </p>
+      </li>
+      <!-- Topic 6 -->
+      <li><h1>Topic 6: Resources and Wrap</h1>
+        <time>(< 5 minutes)</time>
+        <p>Provide links to <a href="https://mozillascience.github.io/open-data-primers/2-how-to.html"> Primer 1</a>, and other relevant resources.</p>
+        <p>&#8198 &#8226 <a href="https://library.queensu.ca/ojs/index.php/IEE/article/view/4608">!!!Nine simple ways to make it easier to (re)use your data</a>
+        <br>&#8198 &#8226 <a href="http://www.ands.org.au/guides/metadata-working">Metadata Guide</a> from Australian National Data Service (a simple working-level view of the needs, issues, processes around metadata collection and creation; not discipline specific)
+        <br>&#8198 &#8226 <a href="https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf">Best Practices for Data Management (PDF)</a> from DataONE: Section 5.4 (p.5)
+        <br><a href="http://rd-alliance.github.io/metadata-directory/standards/">Metadata Directory from Research Data Alliance</a> - which provides a list of metadata standards used in various disciplines.
+    </p>
+      </li>
+   
+    </ol>
+
+  <!-- Navigate -->
+  	<h2 id="navigate">Navigate</h2>
+              <p> <a href="../index.html">Home</a>  |  <a href="2_How.html">Next Lesson</a></p>
+  	</article>
+  </body>
+</html>
